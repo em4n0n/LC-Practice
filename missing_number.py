@@ -38,3 +38,5 @@ Given an array `nums` containing `n` distinct numbers in the range `[0, n]`
 - `0 <= nums[i] <= n`
 - All the numbers of `nums` are **unique**.
 """
+def missing_number(nums):
+    return sum(range(len(nums)+1)) - sum(nums)
