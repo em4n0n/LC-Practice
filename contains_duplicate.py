@@ -43,7 +43,7 @@ Constraints:
 # If they are equal, return False (no duplicates), otherwise return True (duplicates exist)
 
 def contains_duplicate(nums):
-    if len(set(nums)) == len(nums):
+    if len(set(nums)) == len(nums): # converting to a set removes duplicates
         return False
     else:
         return True
