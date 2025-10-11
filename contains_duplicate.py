@@ -38,3 +38,8 @@ Constraints:
 1 <= nums.length <= 105
 -109 <= nums[i] <= 109
 """
+def contains_duplicate(nums):
+    if len(set(nums)) == len(nums):
+        return False
+    else:
+        return True
