@@ -38,8 +38,13 @@ Constraints:
 1 <= nums.length <= 105
 -109 <= nums[i] <= 109
 """
+
+# Iterate through the list and check if the length of the set of the list is equal to the length of the list
+# If they are equal, return False (no duplicates), otherwise return True (duplicates exist)
+
 def contains_duplicate(nums):
     if len(set(nums)) == len(nums):
         return False
     else:
         return True
+    
