@@ -29,3 +29,19 @@ Constraints:
 2 <= nums.length <= 500
 0 <= nums[i] <= 100"""
 
+class Solution:
+    def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
+        temp = sorted(nums) # allows us to avoid nested loops
+
+        d = {}
+
+        for i, j in enumerate(temp): # if value is not in d, add to d
+            if j not in d: # we don't add duplicates
+                d[j]= i
+
+        r = []
+
+        for i in nums:
+            r.append(d[i]) # append the value of the index in d
+
+        return r   
