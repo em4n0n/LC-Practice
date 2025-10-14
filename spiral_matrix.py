@@ -21,3 +21,7 @@ n == matrix[i].length
 -100 <= matrix[i][j] <= 100
     """
     
+class Solution:
+    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        
+        r = []
