@@ -26,4 +26,4 @@ class Solution:
         
         r = []
         while matrix:
-            
+            r+=(matrix.pop(0))
