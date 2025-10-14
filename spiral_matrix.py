@@ -38,3 +38,5 @@ class Solution:
             if matrix and matrix[0]:
                 for i in matrix[::-1]:
                     r.append(i.pop(0))
+                    
+        return r
