@@ -34,3 +34,7 @@ class Solution:
                     
             if matrix:
                 r+=(matrix.pop()[::-1])
+                
+            if matrix and matrix[0]:
+                for i in matrix[::-1]:
+                    
