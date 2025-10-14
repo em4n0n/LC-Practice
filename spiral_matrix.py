@@ -31,3 +31,6 @@ class Solution:
             if matrix and matrix[0]:
                 for i in matrix:
                     r.append(i.pop())
+                    
+            if matrix:
+                r+=(matrix.pop()[::-1])
