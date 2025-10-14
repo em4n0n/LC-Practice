@@ -27,3 +27,5 @@ class Solution:
         r = []
         while matrix:
             r+=(matrix.pop(0))
+            
+            if matrix and matrix[0]:
