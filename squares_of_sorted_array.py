@@ -27,4 +27,5 @@ Follow up: Squaring each element and sorting the new array is very trivial, coul
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
         left = 0 # left pointer starting at index 0
-        right = len(nums) # right point starting at the end of the list
+        right = len(nums) - 1 # right point starting at the end of the list
+        result = []
