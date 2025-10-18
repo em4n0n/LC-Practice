@@ -23,3 +23,8 @@ nums is sorted in non-decreasing order.
 
 Follow up: Squaring each element and sorting the new array is very trivial, could you find an O(n) solution using a different approach?
     """
+    
+class Solution:
+    def sortedSquares(self, nums: List[int]) -> List[int]:
+        left = 0 # left pointer starting at index 0
+        right = len(nums) # right point starting at the end of the list
