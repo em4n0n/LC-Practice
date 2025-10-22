@@ -29,3 +29,6 @@ class Solution:
         left = 0 # left pointer starting at index 0
         right = len(nums) - 1 # right point starting at the end of the list
         result = []
+        
+        while left <= right:
+            if abs(nums[left]) > abs(nums[right]):
